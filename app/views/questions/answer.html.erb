@@ -1,0 +1,9 @@
+<div>
+  <p>you asked: <%= params[:question] %></p>
+  <% if params[:question] == "hello" %>
+  <h2>I don't care, get dressed and go to work!</h2>
+  <% end %>
+  <% if params[:question] == "what time is it?" %>
+  <h2><%= Time.now %></h2>
+  <% end %>
+</div>
